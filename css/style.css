@@ -7,8 +7,11 @@ body {
 
 header {
 	position: relative;
-	background: url("../images/black-orchid.png") repeat #2F2F2F;
-	height: 300px;
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	height: auto;
+	padding-bottom: 20px;
 }
 
 .head {
@@ -26,7 +29,6 @@ header {
 }
 
 .logo i {
-	color: #fff;
 	font-size: 48px;
 	margin-right: 20px;
 	transition: 1s;
@@ -71,10 +73,8 @@ header {
 /*END FORM*/
 
 .connect-btn {
-	background-color: #5C5C5C;
-	color: #AFAFAF;
-	text-shadow: -1px -1px #000,
-               0 1px 0 #444;
+	background-color: #AFAFAF;
+	color: #161616;
 	font-weight: bold;
 	font-size: 18px;
 	padding: 10px 20px;
@@ -84,4 +84,31 @@ header {
 
 .connect-btn i {
 	font-weight: bold;
+}
+
+.main-info {
+	font-size: 32px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.main-info center {
+	margin-top: 40px;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.main-info .block {
+	margin-bottom: 20px;
+	font-size: 64px;
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+}
+
+.main-info .block span {
+	font-size: 18px;
+	font-weight: normal;
+	display: block;
 }
