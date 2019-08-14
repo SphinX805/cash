@@ -20,10 +20,10 @@
 		<div class="block">100K+<span>ВЛАДЕЛЬЦЫ ЭЛЕКТРОННЫХ ДЕНЕГ</span></div>
 		<div class="block">5K+<span>ФИНАНСИСТЫ</span></div>
 	</div>
-	<form method="post" action="">
-		<input type="text" id="login" name="email" placeholder="Email" required="">
-		<input type="password" id="code" name="password" placeholder="Пароль" required="">
-		<input type="submit" name="submit777" value="Войти" class="submit-btn">
+	<form method="POST" action="auth.php">
+		<input type="text" name="name" id="login" placeholder="Email" required="" >
+		<input type="password" name="pass" id="code" placeholder="Пароль" required="" >
+		<input type="submit" name="submit" value="Войти" class="submit-btn">
 	</form>
 			<hr>
 	<center><button type="button" class="connect-btn" onclick="location.href = './reg.html';"><i class="fas fa-plus"></i> Подключиться</button></center>

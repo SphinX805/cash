@@ -1,3 +1,20 @@
+<?php
+session_set_cookie_params(60);
+session_start();
+if (@$_SESSION["auth"] == true){
+header('Location: index.php');
+}
+
+
+
+
+
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +25,12 @@
 </head>
 <body>
 	
-	<form method="post" action="">
+	<form method="POST" action="regist.php">
 		<div class="logo"><i class="fas fa-wallet"></i>DogeCash</div>
-		<p>Логин:</p><input type="text" placeholder="cash@gmail.com"><br>
-		<p>Пароль:</p><input type="password"><br>
-		<p>Повтор пароля:</p><input type="password"><br>
-		<center><input type="submit" value="Регистрация" class="sub-btn"><i class="fas fa-arrow-right"></i></center>
+		<p>Логин:</p><input type="text" placeholder="cash@gmail.com" name="name"> <p><font color="red"><?php echo @$_SESSION["regerrorNAME"]; ?></font></p><br>
+		<p>Пароль:</p><input type="password" name="pass"><br>
+		<p>Повтор пароля:</p><input type="password" name="pass1"><p><font color = "red"><?php echo @$_SESSION["regerrorPASS"]; ?></font><br>
+		<center><input type="submit" name = "submit" value="Регистрация" class="sub-btn"><i class="fas fa-arrow-right"></i></center>
 	</form>
 
 	<style>
