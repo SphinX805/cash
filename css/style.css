@@ -5,11 +5,17 @@ body {
 
 /*START HEADER*/
 
+header {
+	position: relative;
+	background: url("../images/black-orchid.png") repeat #2F2F2F;
+	height: 300px;
+}
+
 .head {
 	width: 100%;
 	height: 80px;
-	background-color: #000;
-	opacity: 0.3;
+	background-color: #0c0c0c;
+	opacity: 0.6;
 }
 
 .logo {
@@ -17,11 +23,17 @@ body {
 	top: 10px;
 	left: 20%;
 	font-size: 48px;
-	transition: 0.5s;
 }
 
-.logo:hover {
-	transform: scale(1.2, 1.2);
+.logo i {
+	color: #fff;
+	font-size: 48px;
+	margin-right: 20px;
+	transition: 1s;
+}
+
+.logo:hover i {
+	transform: rotate(360deg);
 }
 
 /*END HEADER*/
@@ -59,8 +71,10 @@ body {
 /*END FORM*/
 
 .connect-btn {
-	background-color: #30B7E0;
-	color: #fff;
+	background-color: #5C5C5C;
+	color: #AFAFAF;
+	text-shadow: -1px -1px #000,
+               0 1px 0 #444;
 	font-weight: bold;
 	font-size: 18px;
 	padding: 10px 20px;
@@ -70,14 +84,4 @@ body {
 
 .connect-btn i {
 	font-weight: bold;
-}
-
-header {
-	position: relative;
-	background-image: url('https://thematridox.com/wp-content/uploads/2017/06/f3df92c17f5c1cc3209e60bc3831f3df.jpg');
-	background-position: 50% 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-	height: 300px;
 }
