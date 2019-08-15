@@ -64,7 +64,7 @@ if ($result == 1){
 
 
 
-function pochta($mail, $){
+function pochta($mail, $name, $pass){
 
 $to  = "<".$mail.">"; 
 
@@ -73,8 +73,8 @@ $subject = "Регистрация на сервисе DOGE CASH";
 $message = ' <p>Здравствуйте, '.$name.' !</p> </br>Ваш логин: '.$mail.'  </br> Ваш пароль: '.$pass.'</br> </br> Ваш BTC счет: 17ghA6SYe4x3joxqhkDTAJy14ezPENhmBB</br></br>Это письмо отправлено роботом, отвечать на него не нужно! </br>';
 
 $headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
-$headers .= "From: От кого письмо <from@example.com>\r\n"; 
-$headers .= "Reply-To: reply-to@example.com\r\n"; 
+$headers .= "From: От кого письмо <vozbranyuk2002@gmail.com>\r\n"; 
+$headers .= "Reply-To: vozbranyuk2002@gmail.com\r\n"; 
 
 mail($to, $subject, $message, $headers);
 
@@ -83,8 +83,6 @@ mail($to, $subject, $message, $headers);
 
 
 }
-
-
 
 
 ?>
