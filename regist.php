@@ -73,7 +73,7 @@ $to  = "<".$mail.">";
 
 $subject = "Регистрация на сервисе DOGE CASH"; 
 
-$message = "<p>Здравствуйте, ".$name." !</p> <br>Ваш логин: ".$mail."  <br> Ваш пароль: ".$pass."<br> <br> Ваш BTC счет: 17ghA6SYe4x3joxqhkDTAJy14ezPENhmBB<br><br>Это письмо отправлено роботом, отвечать на него не нужно! <br> <br>Нажмите на кнопку ниже чтобы подтвердить свою почту <br> <br><a style = \"background-color: #6D43FF; padding: 5px; border-radius: 12px; font-weight: bold; color: #fff; text-decoration: none;\" href=\"http://cash.sphinxs.ru/mail.php?code=".$codemail."\">Подтвердить почту</a><br>";
+$message = "<p>Здравствуйте, ".$name." !</p> <br>Ваш логин: ".$mail."  <br> Ваш пароль: ".$pass."<br> <br> Ваш BTC счет: 17ghA6SYe4x3joxqhkDTAJy14ezPENhmBB<br><br>Это письмо отправлено роботом, отвечать на него не нужно! <br> <br>Нажмите на кнопку ниже чтобы подтвердить свою почту <br> <br><a style = \"background-color: #6D43FF; padding: 10px 15px; border-radius: 12px; font-weight: bold; font-size: 24px; line-height: 24px; letter-spacing: 1px; color: #fff; text-decoration: none;\" href=\"http://cash.sphinxs.ru/mail.php?code=".$codemail."\">Подтвердить почту</a><br>";
 
 $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
 $headers .= "From: SPHINXS-BOT <no.reply.bot@sphinxs.ru>\r\n"; 
