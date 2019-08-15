@@ -29,7 +29,7 @@ if ($result == 1){
 }else{
 	session_set_cookie_params(60);
 	session_start();
-	$errormail = "данное имя уже занято";
+	$errormail = "эта почта уже зарегестрирована";
 	$_SESSION["regerrormail"] = $errormail;
 	$_SESSION["auth"] = false;
 	header('Location: reg.php');
