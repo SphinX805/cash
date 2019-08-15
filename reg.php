@@ -28,7 +28,7 @@ header('Location: index.php');
 	<form method="POST" action="regist.php">
 		<div class="logo"><i class="fas fa-wallet"></i>DogeCash</div>
 		<p>Имя:</p><input type="text" placeholder="Придумайте имя" name="name"><br>
-		<p>Логин:</p><input type="text" placeholder="cash@gmail.com" name="name"> <p><font color="red"><?php echo @$_SESSION["regerrormail"]; ?></font></p><br>
+		<p>Логин:</p><input type="email" placeholder="cash@gmail.com" name="mail"> <p><font color="red"><?php echo @$_SESSION["regerrormail"]; ?></font></p><br>
 		<p>Пароль:</p><input type="password" name="pass"><br>
 		<p>Повтор пароля:</p><input type="password" name="pass1"><p><font color = "red"><?php echo @$_SESSION["regerrorPASS"]; ?></font><br>
 		<center><input type="submit" name = "submit" value="Регистрация" class="sub-btn"><i class="fas fa-arrow-right"></i></center>

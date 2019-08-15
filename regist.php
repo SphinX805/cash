@@ -15,6 +15,7 @@ $bd -> close();
 if ($result == 1){
 	session_set_cookie_params(60);
 	session_start();
+	pochta($mail, $name, $pass);
 	$errormail = "";
 	$_SESSION["regerrormail"] = $errormail;
 	$_SESSION["auth"] = true;
@@ -58,7 +59,7 @@ if ($result == 1){
 	session_start();
 	$_SESSION["auth"] = false;
 	header('Location: reg.php');
-}else{header('Location: reg.php');}
+}
 
 
 
