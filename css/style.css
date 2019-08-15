@@ -7,9 +7,7 @@ body {
 
 header {
 	position: relative;
-	background-color: #000000;
 	background-image: url('https://thematridox.com/wp-content/uploads/2017/06/f3df92c17f5c1cc3209e60bc3831f3df.jpg');
-	height: auto;
 	padding-bottom: 20px;
 }
 
@@ -21,6 +19,7 @@ header {
 }
 
 .logo {
+	color: #1A8EC8;
 	position: absolute;
 	top: 10px;
 	left: 20%;
@@ -29,6 +28,7 @@ header {
 }
 
 .logo i {
+	color: #FFA318;
 	font-size: 48px;
 	margin-right: 20px;
 	transition: 1s;
@@ -112,4 +112,47 @@ header {
 	font-size: 18px;
 	font-weight: normal;
 	display: block;
+}
+
+.content {
+	width: 70%;
+	color: #000;
+	height: auto;
+	margin-left: 15%;
+}
+
+.top-info {
+	position: relative;
+	border: 2px solid;
+	display: inline-block;
+	height: auto;
+}
+
+.top-block {
+	position: relative;
+	width: 30%;
+	height: 100%;
+	margin-left: 3%;
+	display: inline-block;
+	text-align: center;
+}
+
+
+.top-block i {
+	display: inline-block;
+	font-size: 24px;
+}
+
+.top-block p {
+	display: inline-block;
+}
+
+.fa-check {
+	color: #37D649;
+}
+
+.top-block h2 {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 10px;
 }
