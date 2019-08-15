@@ -2,6 +2,7 @@
 if(isset($_POST["submit"])){
 $pass = strip_tags($_POST["pass"]);
 $mail = strip_tags($_POST["mail"]);
+$name = strip_tags($_POST["name"]);
 $pass1 = strip_tags($_POST["pass1"]);
 $salt = "d9DqJluFQH3N2jE8LQvd";
 
@@ -9,7 +10,7 @@ $salt = "d9DqJluFQH3N2jE8LQvd";
  if($pass == $pass1){
 $passmd5 = md5($pass.$salt);
 require "bd.php";
-$result = $bd -> query("INSERT INTO `users` (`id`, `mail`, `pass`) VALUES (NULL, '".$mail."', '".$passmd5."');");
+$result = $bd -> query("INSERT INTO `users` (`id`, `mail`, `name`, `pass`) VALUES (NULL, '".$mail."', '".$name."', '".$passmd5."');");
 $bd -> close();
 if ($result == 1){
 	session_set_cookie_params(60);
