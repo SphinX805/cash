@@ -7,9 +7,8 @@ body {
 
 header {
 	position: relative;
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	background-color: #000000;
+	background-image: url('https://thematridox.com/wp-content/uploads/2017/06/f3df92c17f5c1cc3209e60bc3831f3df.jpg');
 	height: auto;
 	padding-bottom: 20px;
 }
@@ -26,12 +25,14 @@ background-image: url("https://www.transparenttextures.com/patterns/light-honeyc
 	top: 10px;
 	left: 20%;
 	font-size: 48px;
+	color: #3CC5FF;
 }
 
 .logo i {
 	font-size: 48px;
 	margin-right: 20px;
 	transition: 1s;
+	color: #FFAD32;
 }
 
 .logo:hover i {
@@ -73,8 +74,8 @@ background-image: url("https://www.transparenttextures.com/patterns/light-honeyc
 /*END FORM*/
 
 .connect-btn {
-	background-color: #AFAFAF;
-	color: #161616;
+	background-color: #3CC5FF;
+	color: #fff;
 	font-weight: bold;
 	font-size: 18px;
 	padding: 10px 20px;
