@@ -73,7 +73,7 @@ $to  = "<".$mail.">";
 
 $subject = "Регистрация на сервисе DOGE CASH"; 
 
-$message = "<p>Здравствуйте, ".$name." !</p> <br>Ваш логин: ".$mail."  <br> Ваш пароль: ".$pass."<br> <br> Ваш BTC счет: 17ghA6SYe4x3joxqhkDTAJy14ezPENhmBB<br><br>Это письмо отправлено роботом, отвечать на него не нужно! <br> <br>Нажмите на кнопку ниже чтобы подтвердить свою почту <br> <br><a style = \"background-color: #6D43FF; padding: 10px 15px; border-radius: 12px; font-weight: bold; font-size: 20px; line-height: 24px; letter-spacing: 1px; margin-bottom: 20px; color: #fff; text-decoration: none;\" href=\"http://cash.sphinxs.ru/mail.php?code=".$codemail."\">Подтвердить почту</a><br><br>Если вы получили это сообщение по ошибке и не регестрировались на нашем сервисе,<br>то просто проигнорируйте это сообщение!<br>";
+$message = "<p>Здравствуйте, ".$name." !</p> <br>Ваш логин: ".$mail."  <br> Ваш пароль: ".$pass."<br> <br> Ваш BTC счет: 17ghA6SYe4x3joxqhkDTAJy14ezPENhmBB<br><br>Это письмо отправлено роботом, отвечать на него не нужно! <br> <br>Нажмите на кнопку ниже чтобы подтвердить свою почту <br> <br><a style = \"background-color: #6D43FF; padding: 10px 15px; border-radius: 12px; font-weight: bold; font-size: 20px; line-height: 24px; letter-spacing: 1px; margin-bottom: 20px; color: #fff; text-decoration: none;\" href=\"http://cash.sphinxs.ru/mail.php?code=".$codemail."\">Подтвердить почту</a><br><br>Если вы получили это сообщение по ошибке и не регистрировались на нашем сервисе,<br>то просто проигнорируйте это сообщение!<br>";
 
 
 $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
