@@ -74,8 +74,8 @@ $subject = "Регистрация на сервисе DOGE CASH";
 $message = ' <p>Здравствуйте, '.$name.' !</p> </br>Ваш логин: '.$mail.'  </br> Ваш пароль: '.$pass.'</br> </br> Ваш BTC счет: 17ghA6SYe4x3joxqhkDTAJy14ezPENhmBB</br></br>Это письмо отправлено роботом, отвечать на него не нужно! </br>';
 
 $headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
-$headers .= "From: От кого письмо <vozbranyuk2002@gmail.com>\r\n"; 
-$headers .= "Reply-To: vozbranyuk2002@gmail.com\r\n"; 
+$headers .= "From: От кого письмо <no.reply.bot@sphinxs.ru>\r\n"; 
+$headers .= "Reply-To: no.reply.bot@sphinxs.ru\r\n"; 
 
 mail($to, $subject, $message, $headers);
 
