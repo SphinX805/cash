@@ -81,6 +81,7 @@ header('Location: index.php');
 		}
 
 		input {
+			color: #0c0c0c;
 			float: right;
 			margin-top: 15px;
 			padding: 5px;
