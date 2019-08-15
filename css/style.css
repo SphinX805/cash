@@ -111,3 +111,28 @@ header {
 	font-weight: normal;
 	display: block;
 }
+
+.content {
+	width: 70%;
+	color: #000;
+	height: auto;
+	margin-left: 15%;
+}
+
+.top-block {
+	width: 30%;
+	margin-left: 3%;
+	display: inline-block;
+	text-align: center;
+}
+
+.top-block i {
+	display: inline-block;
+	font-size: 24px;
+}
+
+.top-block h2 {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 10px;
+}
