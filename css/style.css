@@ -119,16 +119,34 @@ header {
 	margin-left: 15%;
 }
 
+.top-info {
+	position: relative;
+	border: 2px solid;
+	display: inline-block;
+	height: auto;
+}
+
 .top-block {
+	position: relative;
 	width: 30%;
+	height: 100%;
 	margin-left: 3%;
 	display: inline-block;
 	text-align: center;
 }
 
+
 .top-block i {
 	display: inline-block;
 	font-size: 24px;
+}
+
+.top-block p {
+	display: inline-block;
+}
+
+.fa-check {
+	color: #37D649;
 }
 
 .top-block h2 {
