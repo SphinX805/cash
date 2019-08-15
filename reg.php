@@ -69,7 +69,7 @@ header('Location: index.php');
 			width: 300px;
 			position: absolute;
 			top: calc(50% - 175px);
-			left: calc(50% - 250px);
+			left: calc(50% - 150px);
 		}
 		
 		form i {
