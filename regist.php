@@ -20,7 +20,7 @@ if ($result == 1){
 	pochta($mail, $name, $pass, $codemail);
 	$errormail = "";
 	$_SESSION["regerrormail"] = $errormail;
-	$_SESSION["auth"] = true;
+	$_SESSION["reg"] = true;
 	header('Location: index.html');
 
 
@@ -31,7 +31,7 @@ if ($result == 1){
 	session_start();
 	$errormail = "эта почта уже зарегестрирована";
 	$_SESSION["regerrormail"] = $errormail;
-	$_SESSION["auth"] = false;
+	$_SESSION["reg"] = false;
 	header('Location: reg.php');
 }
 
@@ -44,7 +44,7 @@ if ($result == 1){
 	session_start();
 	$errorpass = "пароли не совпадают";
 	$_SESSION["regerrorPASS"] = $errorpass;
-	$_SESSION["auth"] = false;
+	$_SESSION["reg"] = false;
 	header('Location: reg.php');
 }
 
@@ -52,14 +52,14 @@ if ($result == 1){
 	session_start();
 	$errorpass = "введите корректный пароль";
 	$_SESSION["regerrorPASS"] = $errorpass;
-	$_SESSION["auth"] = false;
+	$_SESSION["reg"] = false;
 	header('Location: reg.php');}
 
 
 }else{
 	session_set_cookie_params(21600);
 	session_start();
-	$_SESSION["auth"] = false;
+	$_SESSION["reg"] = false;
 	header('Location: reg.php');
 }
 
