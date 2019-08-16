@@ -1,3 +1,26 @@
+<?php
+session_set_cookie_params(21600);
+session_start();
+$status = $_SESSION["auth"];
+$id = $_SESSION["id"];
+if($status != true){
+header('Location: ../index.php');
+}else{
+require "../bd.php";
+$result = $bd -> query("SELECT `balance` FROM `users` WHERE `id` = '".$id."'");
+$balance = vivodB($result);
+
+
+}
+
+function vivodB($result_set){
+
+	while(($row = $result_set->fetch_assoc()) != false){
+		return $row["balance"];
+		
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +35,7 @@
 
 		<div class="h-link"><a href="#">DogeCash.ru</a></div>
 		<div class="h-link"><a href="#">Пополнение<i class="fas fa-plus"></i></a></div>
-				<div class="balance">0.00 RUB</div> <!-- SANYA BLYAT KOSHELEK -->
+				<div class="balance"><?php echo $balance; ?>.00 RUB</div> <!-- SANYA BLYAT KOSHELEK -->
 		<div class="h-link"><a href="#">Сервисы<i class="fas fa-list"></i></a></div>
 		<form action="exit.php" method="POST"><div class="h-link exit"><button type="submit" name="done" value="Выход">Выход</button></form></div>
 	</div>
