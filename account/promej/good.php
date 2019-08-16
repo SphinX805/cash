@@ -1,14 +1,16 @@
 <?php
-// session_set_cookie_params(21600);
-// session_start();
-// $status = $_SESSION["maiSTAT"];
-// $message = $_SESSION["message"];
+session_set_cookie_params(21600);
+session_start();
+$status = $_SESSION["maiSTAT"];
+$message = $_SESSION["message"];
+if($status == true){
+$_SESSION["auth"] == true;
+}
 ?>
 
 
-<p>message</p>
-<a class="btn" href="#">link</a>
-<!-- <p> <?php echo $message;  ?> </p> -->
+<p><?php echo $message ?> </p>
+<a class="btn" href="../index.php">link</a>
 
 <style type="text/css">
 	.btn {
