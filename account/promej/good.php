@@ -5,7 +5,7 @@ $status = $_SESSION["maiSTAT"];
 $message = $_SESSION["message"];
 $id = $_SESSION["id"];
 if($status == true){
-$_SESSION["auth"] == true;
+$_SESSION["auth"] = true;
 }
 ?>
 

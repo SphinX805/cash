@@ -11,8 +11,6 @@ $result = $bd -> query("SELECT `balance` FROM `users` WHERE `id` = '".$id."'");
 $balance = vivodB($result);
 
 
-
-
 }
 
 function vivodB($result_set){
@@ -36,7 +34,7 @@ function vivodB($result_set){
 	<div class="head">
 		<div class="h-link"><a href="#">DogeCash.ru</a></div>
 		<div class="h-link"><a href="#">Пополнение<i class="fas fa-plus"></i></a></div>
-				<div class="balance"><?php echo $balance; ?> RUB</div> <!-- SANYA BLYAT KOSHELEK -->
+				<div class="balance"><?php echo $balance; ?>.00 RUB</div> <!-- SANYA BLYAT KOSHELEK -->
 		<div class="h-link"><a href="#">Сервисы<i class="fas fa-list"></i></a></div>
 		<div class="h-link exit"><a href="#">Выход<i class="fas fa-sign-out-alt"></i></a></div>
 	</div>
