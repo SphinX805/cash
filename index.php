@@ -1,3 +1,11 @@
+<?php
+session_set_cookie_params(21600);
+session_start();
+$status = $_SESSION["auth"];
+
+if($status == true){header('Location: /account/index.php');}
+
+?>
 <!doctype html>
 <html class=" js no-touch" style=""><!--<![endif]--><head>
         <meta charset="utf-8">
@@ -132,7 +140,7 @@
 <div class="auth">
   <form method="POST" action="auth.php">
     <input type="text" name="name" id="login" placeholder="Email" required="" >
-    <input type="password" name="pass" id="code" placeholder="Пароль" required="" >
+    <input type="password" name="pass" id="code" placeholder="Пароль" required="" ><p><font color = "red"><?php echo @$_SESSION["authERROR"]; ?></font></p>
     <input type="submit" name="submit" value="Войти" class="submit-btn">
   </form>
 </div>

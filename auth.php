@@ -4,6 +4,7 @@ session_start();
 $pass = $_POST["pass"];
 $name = $_POST["name"];
 $salt = "d9DqJluFQH3N2jE8LQvd";
+$_SESSION["authERROR"] = "";
 require "bd.php";
 $result_set = $bd -> query("SELECT `pass` FROM `users` WHERE `name` = '".$name."'");
 $truepass = vivod1($result_set);
@@ -12,7 +13,15 @@ $id = vivod11($resu);
 $_SESSION["id"] = $id;
 $bd -> close();
 if(md5($pass.$salt) == $truepass)
-{echo "good";}else{echo("incorrect password");}
+{
+	$_SESSION["auth"] = true;
+	$_SESSION["authERROR"] = "";
+	header('Location: /account/index.php');
+}else{
+	$_SESSION["auth"] = false;
+	$_SESSION["authERROR"] = "incorrect name or password";
+	header('Location: index.php');
+}
 
 
 
