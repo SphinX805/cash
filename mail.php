@@ -9,21 +9,21 @@ $id = vivod($resu);
 $uslov = $bd -> query("UPDATE `users` SET `mailstatus` = 'true' WHERE `users`.`id` = ".$id.";");
 
 if($uslov == 1){
+	
 $_SESSION["message"] = "Почта успешно подтверждена!";
 $_SESSION["maiSTAT"] = true;
-header('Location: account/prom.php');
-
+header('Location: account/promej/good.php');
 
 }else{
 $_SESSION["maiSTAT"] = false;	
 $_SESSION["message"] = "ошибка при подтверждении";
-header('Location: account/prom.php');
+header('Location: account/promej/error.php');
 
 }
 
 
 
-}else{$_SESSION["maiSTAT"] = false; $_SESSION["message"] = "сначала зарегистрируйтесь";header('Location: account/prom.php');}
+}else{$_SESSION["maiSTAT"] = false; $_SESSION["message"] = "сначала зарегистрируйтесь";header('Location: account/promej/bad.php');}
 
 
 
