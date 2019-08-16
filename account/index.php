@@ -9,12 +9,25 @@
 <body>
 	<header>
 	<div class="head">
+
 		<div class="h-link"><a href="#">DogeCash.ru</a></div>
 		<div class="h-link"><a href="#">Пополнение<i class="fas fa-plus"></i></a></div>
 				<div class="balance">0.00 RUB</div> <!-- SANYA BLYAT KOSHELEK -->
 		<div class="h-link"><a href="#">Сервисы<i class="fas fa-list"></i></a></div>
-		<div class="h-link exit"><a href="#">Выход<i class="fas fa-sign-out-alt"></i></a></div>
+		<form action="exit.php" method="POST"><div class="h-link exit"><button type="submit" name="done" value="Выход">Выход</button></form></div>
 	</div>
 	</header>
+
+	<div class="content">
+	<div class="menu-div">
+		<div class="content-menu"><a href="#">Баланс</a></div>
+		<div class="content-menu"><a href="#">Ставки</a></div>
+		<div class="content-menu"><a href="#">Вывести</a></div>
+		<div class="content-menu"><a href="#">Обменять</a></div>
+		<div class="content-menu"><a href="#">История</a></div>
+		<div class="content-menu"><a href="#">Настройки</a></div>
+	</div>
+	</div>
+
 </body>
 </html>
