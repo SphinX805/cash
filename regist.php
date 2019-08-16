@@ -15,7 +15,7 @@ require "bd.php";
 $result = $bd -> query("INSERT INTO `users` (`id`, `mail`, `name`, `pass`, `mailcode`, `mailstatus`) VALUES (NULL, '".$mail."', '".$name."', '".$passmd5."', '".$codemail."', '".$mailstatus."');");
 $bd -> close();
 if ($result == 1){
-	session_set_cookie_params(60);
+	session_set_cookie_params(21600);
 	session_start();
 	pochta($mail, $name, $pass, $codemail);
 	$errormail = "";
@@ -27,7 +27,7 @@ if ($result == 1){
 
 
 }else{
-	session_set_cookie_params(60);
+	session_set_cookie_params(21600);
 	session_start();
 	$errormail = "эта почта уже зарегестрирована";
 	$_SESSION["regerrormail"] = $errormail;
@@ -40,7 +40,7 @@ if ($result == 1){
 
 
 }else{
-	session_set_cookie_params(60);
+	session_set_cookie_params(21600);
 	session_start();
 	$errorpass = "пароли не совпадают";
 	$_SESSION["regerrorPASS"] = $errorpass;
@@ -48,7 +48,7 @@ if ($result == 1){
 	header('Location: reg.php');
 }
 
-}else{session_set_cookie_params(60);
+}else{session_set_cookie_params(21600);
 	session_start();
 	$errorpass = "введите корректный пароль";
 	$_SESSION["regerrorPASS"] = $errorpass;
@@ -57,7 +57,7 @@ if ($result == 1){
 
 
 }else{
-	session_set_cookie_params(60);
+	session_set_cookie_params(21600);
 	session_start();
 	$_SESSION["auth"] = false;
 	header('Location: reg.php');
