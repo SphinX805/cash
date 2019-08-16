@@ -1,0 +1,71 @@
+body {
+	margin: 0;
+	color: #fff;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: green;
+}
+
+.head {
+	width: 80%;
+	margin-left: 10%;	
+	display: inline-block;
+}
+
+.h-link {
+	width: 14%;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 5px;	
+	margin-right: 5%;	
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	display: inline-block;
+	border-bottom: 3px solid green;
+	transition: 0.5s;
+}
+
+.h-link i {
+	position: relative;
+	font-size: 	24px;
+	right: 10px;
+}
+
+.h-link a {
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+.exit i {
+	left: 20px;
+	top: 5px;
+}
+
+.balance {
+	width: 15%;
+	height: 30px;
+	margin-right: 5%;
+	padding-top: 10px;
+	display: inline-block;
+	color: #000;
+	background-color: #fff;
+	font-style: 36px;	
+	font-weight: bold;
+	border-radius: 8px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.balance:hover {
+	background-color: #bdbdbd;
+}
+
+.h-link:hover {
+	border-bottom: 3px solid #fff;
+}
