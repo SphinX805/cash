@@ -35,9 +35,9 @@ function vivodB($result_set){
 	<header>
 	<div class="head">
 		<div class="h-link"><a href="#">DogeCash.ru</a></div>
-		<div class="h-link"><a href="#"><i class="fas fa-plus"></i>Пополнение</a></div>
+		<div class="h-link"><a href="#">Пополнение<i class="fas fa-plus"></i></a></div>
 				<div class="balance"><?php echo $balance; ?> RUB</div> <!-- SANYA BLYAT KOSHELEK -->
-		<div class="h-link"><a href="#">Сервисы</a></div>
+		<div class="h-link"><a href="#">Сервисы<i class="fas fa-list"></i></a></div>
 		<div class="h-link exit"><a href="#">Выход<i class="fas fa-sign-out-alt"></i></a></div>
 	</div>
 	</header>

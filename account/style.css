@@ -29,12 +29,6 @@ header {
 	transition: 0.5s;
 }
 
-.h-link i {
-	position: relative;
-	font-size: 	24px;
-	right: 10px;
-}
-
 .h-link a {
 	text-decoration: none;
 	width: 100%;
@@ -42,9 +36,11 @@ header {
 	color: #fff;
 }
 
-.exit i {
-	left: 20px;
-	top: 5px;
+.h-link i {
+	position: relative;
+	font-size: 	24px;
+	right: -10px;
+	top: 3px;
 }
 
 .balance {
