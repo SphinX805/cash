@@ -21,7 +21,7 @@ if ($result == 1){
 	$errormail = "";
 	$_SESSION["regerrormail"] = $errormail;
 	$_SESSION["reg"] = true;
-	header('Location: index.html');
+	header('Location: index.php');
 
 
 
