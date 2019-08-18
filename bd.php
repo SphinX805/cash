@@ -1,7 +1,7 @@
 <?php
-$bdname = "sito";
-$bdpass = "12345";
-$bduser = "bduser";
+$bdname = "user7436_cash";
+$bdpass = "cashcash";
+$bduser = "user7436_cash";
 $host = "localhost";
 $bd = new mysqli($host, $bduser, $bdpass, $bdname);
 $bd -> query("SET NAMES 'utf8'");
