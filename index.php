@@ -146,6 +146,7 @@ if($status == true){header('Location: /account/index.php');}
 </div>
 	  <style>
 	  	.auth form {
+    color: #000;
 	width: 60%;
 	margin-left: 20%;
 }
