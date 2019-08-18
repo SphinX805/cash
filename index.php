@@ -140,12 +140,13 @@ if($status == true){header('Location: /account/index.php');}
 <div class="auth">
   <form method="POST" action="auth.php">
     <input type="text" name="mail" id="login" placeholder="Email" required="" >
-    <input type="password" name="pass" id="code" placeholder="Пароль" required="" ><p><font color = "red"><?php echo @$_SESSION["authERROR"]; ?></font></p>
+    <input type="password" name="pass" id="code" placeholder="Пароль" required="" ><p style="display: inline-block;"><font color = "red"><?php echo @$_SESSION["authERROR"]; ?></font></p>
     <input type="submit" name="submit" value="Войти" class="submit-btn">
   </form>
 </div>
 	  <style>
 	  	.auth form {
+    color: #000;
 	width: 60%;
 	margin-left: 20%;
 }
