@@ -222,6 +222,26 @@ form i{
 	padding-bottom: 30px;
 }
 
+.last2links {
+	text-align: center;
+}
+
+.last2links a {
+	display: inline-block;
+	margin-left: auto;
+	padding: 10px 30px;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: #5CB85C;
+	margin-top: 20px;
+	text-decoration: none;
+	border-radius: 15px;
+	text-align: center;
+	border: 1px solid #c0c0c0;
+}
+
 .balance-block i {
 	font-size: 48px;
 	color: #F69000;
@@ -290,4 +310,16 @@ form i{
 
 .down .down-btc:hover {
 	background-color: #E9E9D2;
+}
+
+.partner {
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #5BC0DE;
 }

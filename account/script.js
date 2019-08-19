@@ -14,6 +14,12 @@ function closeF() {
 	btn.style.display = "inline-block";
 }
 
+function down(i) {
+	let downDivs = document.body.querySelectorAll(".down");
+	if (downDivs[i].style.display == "inline-block") downDivs[i].style.display = "none";
+	else if (downDivs[i].style.display == "none") downDivs[i].style.display = "inline-block";
+}
+
 var chatcontent = document.body.querySelector(".chat").innerHtml;
 
 close.onclick = closeF;
