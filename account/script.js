@@ -19,13 +19,4 @@ var chatcontent = document.body.querySelector(".chat").innerHtml;
 close.onclick = closeF;
 
 btn.onclick = openF;
-
-function reload() {
-	chat.remove();
-	setInterval( () => {  document.body.append(chat);
-	}, 1000); 
-}
-
-reload = setInterval(reload(), 2000)
-
 }

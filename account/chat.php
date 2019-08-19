@@ -1,9 +1,11 @@
 <?php
+$p = 1;
+for($o = 0; $o < $p; $p++){
 session_set_cookie_params(21600);
 session_start();
-require "bd.php";
+require "../bd.php";
 //$id = $_SESSION["id"];
-$id = 13;
+$id = 39;
 $result_set1 = $bd -> query("SELECT `mail` FROM `users` WHERE `id` = '".$id."'");
 $mail = vivod1($result_set1);
 $time = time();
@@ -100,8 +102,14 @@ function vivod1($result_set){
 		
 	}
 }
-
+chat($messagesNUMBus, $messagesUSER, $messagesADMIN);
+sleep(5);
+echo "<p style=\"
+		position: absolute;
+		right: 20%;
+		top: 40px;
+		z-index: 11;
+		\" id=\"php\">"<?php for($i = 0; $i < $messagesNUMBus; $i++){echo "<br>".'<font color="green">'.$messagesUSER[$i].'</font>'."</br>".'<font color="red">'.$messagesADMIN[$i].'</font>'."</br>";} ?>"</p>";
+}
 ?>
-
-<p><?php for($i = 0; $i < $messagesNUMBus; $i++){echo "<br>".'<font color="green">'.$messagesUSER[$i].'</font>'."</br>".'<font color="red">'.$messagesADMIN[$i].'</font>'."</br>";} ?></p>
 

@@ -1,5 +1,5 @@
 <?php
-/*session_set_cookie_params(21600);
+session_set_cookie_params(21600);
 session_start();
 $status = $_SESSION["auth"];
 $id = $_SESSION["id"];
@@ -19,7 +19,7 @@ function vivodB($result_set){
 		return $row["balance"];
 		
 	}
-}*/
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,12 +74,13 @@ function vivodB($result_set){
 	</div>
 	<div class="chat">
 	<a href="#" class="close">Close Chat</a>
-	texttexttext
+	<!-- ЧАТ -->
 	<form action="chat.php">
 		<input type="text" placeholder="...">
 		<button><i class="fas fa-paper-plane"></i></button>
 	</form>
 	</div>
 	<div class="chat-btn"><a href="#">Чат <i class="fas fa-comments"></i></a></div>
+	<?php require "chat.php"; ?>
 </body>
 </html>
