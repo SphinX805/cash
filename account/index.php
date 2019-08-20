@@ -7,7 +7,7 @@ if($status != true){
 header('Location: ../index.php');
 }else{
 require "../bd.php";
-$result_set = $bd -> query("SELECT `balance` FROM `users` WHERE `id` = '".$id."'");
+$result_set = $bd -> query("SELECT `rub` FROM `users` WHERE `id` = '".$id."'");
 $balance = vivodB($result_set);
 $bd -> close();
 
@@ -16,7 +16,7 @@ $bd -> close();
 function vivodB($result_set){
 
 	while(($row = $result_set->fetch_assoc()) != false){
-		return $row["balance"];
+		return $row["rub"];
 		
 	}
 } 
