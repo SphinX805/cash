@@ -1,5 +1,4 @@
 <?php
-/*
 session_set_cookie_params(21600);
 session_start();
 $status = $_SESSION["auth"];
@@ -20,7 +19,7 @@ function vivodB($result_set){
 		return $row["balance"];
 		
 	}
-} */
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,16 +55,16 @@ function vivodB($result_set){
 
 	<div class="b-status">
 		<div class="balance-block">
-			<a href="#" onclick="down(0)"><i class="fab fa-btc"></i>Bitcoin <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a> 
+			<a href="#"><i class="fab fa-btc"></i>Bitcoin <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a> 
 			<!-- ТУТ БАЛАНС --><p><strong>0.000000000</strong> BTC</p>
 			<div class="down"><a class="down-btc" href="#">aaaa</a></div>
 		</div>
 		<div class="balance-block">
-			<a href="#" onclick="down(1)"><i style="color: green;" class="fas fa-dollar-sign"></i>Доллары <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down" onclick=""></i></a>
+			<a href="#"><i style="color: green;" class="fas fa-dollar-sign"></i>Доллары <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down" onclick=""></i></a>
 			<!-- ТУТ БАЛАНС --><p><strong>0.00</strong> USD</p>
 			<div class="down"><a href="#"><i class="fas fa-cart-arrow-down"></i> Пополнить</a> <a href="#"><i class="fas fa-wallet"></i> Вывести</a></div>
 		</div>
-		<div class="balance-block"><a href="#" onclick="down(2)"><i style="color: #2FA6E2;" class="fas fa-ruble-sign"></i>Рубли <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a>
+		<div class="balance-block"><a href="#"><i style="color: #2FA6E2;" class="fas fa-ruble-sign"></i>Рубли <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a>
 			<!-- ТУТ БАЛАНС --><p><strong>0.00</strong> RUB</p>
 			<div class="down"><a href="#"><i class="fas fa-cart-arrow-down"></i> Пополнить</a> <a href="#"><i class="fas fa-wallet"></i> Вывести</a></div>
 		</div>
@@ -78,7 +77,7 @@ function vivodB($result_set){
 
 	</div>
 	<!-- content end -->
-	<div class="partner">Our partner:<br><br><img src="sber.png" width="200px" height="60px"></div>
+	<div class="partner">Our partner:<br><img src="sber.png" width="200px" height="60px" margin="10px 0"></div>
 	<div class="chat">
 	<a href="#" class="close">Close Chat</a>
 	<!-- ЧАТ -->
