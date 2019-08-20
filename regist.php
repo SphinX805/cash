@@ -12,7 +12,7 @@ $salt = "d9DqJluFQH3N2jE8LQvd";
  if($pass == $pass1){
 $passmd5 = md5($pass.$salt);
 require "bd.php";
-$result = $bd -> query("INSERT INTO `users` (`id`, `mail`, `name`, `pass`, `mailcode`, `mailstatus`) VALUES (NULL, '".$mail."', '".$name."', '".$passmd5."', '".$codemail."', '".$mailstatus."');");
+$result = $bd -> query("INSERT INTO `users` (`id`, `mail`, `name`, `pass`, `mailcode`, `mailstatus`, `rub`, `usd`, `btc`) VALUES (NULL, '".$mail."', '".$name."', '".$passmd5."', '".$codemail."', '".$mailstatus."', NULL, NULL);");
 $bd -> close();
 if ($result == 1){
 	session_set_cookie_params(21600);
