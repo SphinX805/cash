@@ -1,4 +1,4 @@
-<?php
+<?php /*
 session_set_cookie_params(21600);
 session_start();
 $status = $_SESSION["auth"];
@@ -19,7 +19,7 @@ function vivodB($result_set){
 		return $row["rub"];
 		
 	}
-} 
+}  */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,6 +87,14 @@ function vivodB($result_set){
 	</form>
 	</div>
 	<div class="chat-btn"><a href="#">Чат <i class="fas fa-comments"></i></a></div>
-	<?php require "chat.php"; ?>
+	<div class="footer-c">
+		<ul>
+			<li><a href="#">О сервисе</a></li>
+			<li><a href="#">Политика конфиденциальности</a></li>
+			<li><a href="#">Гарантии платёжного агрегатора</a></li>
+		</ul>
+	</div>
+	<div class="footer-c"></div>
+	<?php /* require "chat.php"; */ ?>
 </body>
 </html>
