@@ -322,3 +322,24 @@ form i{
 	padding: 10px 0;
 	background-color: #5BC0DE;
 }
+
+
+.footer-c {
+	padding: 5px;
+	border-radius: 8px;
+	border: 1px solid #c0c0c0;
+	margin-left: 15%;
+	margin-top: 50px;
+	width: 70%;
+	height: auto;
+}
+
+.footer-c li {
+	margin-left: 40px;
+	display: inline-block;
+}
+
+.footer-c ul li a {
+	text-decoration: none;
+	color: #000;
+}

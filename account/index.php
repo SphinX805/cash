@@ -55,16 +55,16 @@ function vivodB($result_set){
 
 	<div class="b-status">
 		<div class="balance-block">
-			<a href="#"><i class="fab fa-btc"></i>Bitcoin <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a> 
+			<a href="#"><i class="fab fa-btc"></i>Bitcoin</a> 
 			<!-- ТУТ БАЛАНС --><p><strong>0.000000000</strong> BTC</p>
 			<div class="down"><a class="down-btc" href="#">aaaa</a></div>
 		</div>
 		<div class="balance-block">
-			<a href="#"><i style="color: green;" class="fas fa-dollar-sign"></i>Доллары <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down" onclick=""></i></a>
+			<a href="#"><i style="color: green;" class="fas fa-dollar-sign"></i>Доллары</a>
 			<!-- ТУТ БАЛАНС --><p><strong>0.00</strong> USD</p>
 			<div class="down"><a href="#"><i class="fas fa-cart-arrow-down"></i> Пополнить</a> <a href="#"><i class="fas fa-wallet"></i> Вывести</a></div>
 		</div>
-		<div class="balance-block"><a href="#"><i style="color: #2FA6E2;" class="fas fa-ruble-sign"></i>Рубли <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a>
+		<div class="balance-block"><a href="#"><i style="color: #2FA6E2;" class="fas fa-ruble-sign"></i>Рубли</a>
 			<!-- ТУТ БАЛАНС --><p><strong>0.00</strong> RUB</p>
 			<div class="down"><a href="#"><i class="fas fa-cart-arrow-down"></i> Пополнить</a> <a href="#"><i class="fas fa-wallet"></i> Вывести</a></div>
 		</div>
@@ -89,9 +89,9 @@ function vivodB($result_set){
 	<div class="chat-btn"><a href="#">Чат <i class="fas fa-comments"></i></a></div>
 	<div class="footer-c">
 		<ul>
-			<li><a href="#">О сервисе</a></li>
-			<li><a href="#">Политика конфиденциальности</a></li>
-			<li><a href="#">Гарантии платёжного агрегатора</a></li>
+			<li><a href="#"><i class="fas fa-info-circle"></i> О сервисе</a></li>
+			<li><a href="#"><i class="fas fa-info-circle"></i> Политика конфиденциальности</a></li>
+			<li><a href="#"><i class="fas fa-info-circle"></i> Гарантии платёжного агрегатора</a></li>
 		</ul>
 	</div>
 	<div class="footer-c"></div>
