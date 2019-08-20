@@ -5,19 +5,30 @@ $ALLusd = $bd -> query("SELECT `usd` FROM `users` WHERE `mailstatus` = 'true'");
 $ALLbtc = $bd -> query("SELECT `btc` FROM `users` WHERE `mailstatus` = 'true'");
 $ALLids = $bd -> query("SELECT `id` FROM `users` WHERE `mailstatus` = 'true'");
 $ALLmails = $bd -> query("SELECT `mail` FROM `users` WHERE `mailstatus` = 'true'");
+$ALLnames = $bd -> query("SELECT `name` FROM `users` WHERE `mailstatus` = 'true'");
 $bd -> close();
 $COLVO = vivCOL($ALLids);
 $RUBS = vivRUB($ALLrub);
 $USDS = vivUSD($ALLusd);
 $BTC = vivBTC($ALLbtc);
 $MAILS = vivMAIL($ALLmails);
-
+$NAMES = vivNAM($ALLnames);
 
 
 
 //FUNCTIONS!!!
 
+function vivNAM($result_set){
+$o = 0;
+$nams = array();
+	while(($row = $result_set->fetch_assoc()) != false){
 
+		$nams[$o] = $row["name"];
+		$o +=1;		
+		
+	} return $nams;
+
+}
 
 function vivCOL($result_set){
 
@@ -84,7 +95,7 @@ $mailsss = array();
 <body>
 <?php 
 for($i=0;$i<$COLVO;$i++){
-echo "<div class=\"str\">\n<form action=\"\" method=\"POST\">\n<input type=\"hidden\" name=\"mail\" value=\"mail\">\n<div class=\"user\" style=\"color: #FF8000;\">h22341sadf@mail.ru\n<font style=\"color: #5197FF; float: right;\">user453</font></div>\n<div class=\"balance\"><p>btc: <input type=\"text\" placeholder=\"0.00000000\"></p>\n<p>usd: <input type=\"text\" placeholder=\"0.00\"></p>\n<p>rub: <input type=\"text\" placeholder=\"0.00\"></p></div>\n<input name=\"submit\" type=\"submit\" value=\"Изменить\">\n</form>\n<form action=\"admchat.php\" method=\"POST\">\n<input type=\"hidden\" name=\"mail\" value=\"mail\">\n<input type=\"submit\" name=\"done\" value=\"Открыть чат\">\n</form>\n</div>";
+echo "<div class=\"str\">\n<form action=\"balADM.php\" method=\"POST\">\n<input type=\"hidden\" name=\"btnnum\" value=\"".$i."\">\n<input type=\"hidden\" name=\"mail\" value=\"".$MAILS[$i]."\">\n<div class=\"user\" style=\"color: #FF8000;\">".$MAILS[$i]."\n<font style=\"color: #5197FF; float: right;\">".$NAMES[$i]."</font></div>\n<div class=\"balance\"><p>btc: <input type=\"text\" name=\"btc\" placeholder=\"".$BTC[$i]."\"></p>\n<p>usd: <input type=\"text\" name=\"usd\" placeholder=\"".$USDS[$i]."\"></p>\n<p>rub: <input type=\"text\" name=\"rub\" placeholder=\"".$RUBS[$i]."\"></p></div>\n<input name=\"submit".$i."\" type=\"submit\" value=\"Изменить\">\n</form>\n<form action=\"admchat.php\" method=\"POST\">\n<input type=\"hidden\" name=\"mail\" value=\"".$MAILS[$i]."\">\n<input type=\"submit\" name=\"done\" value=\"Открыть чат\">\n</form>\n</div>";
 
 }
 
@@ -93,23 +104,7 @@ echo "<div class=\"str\">\n<form action=\"\" method=\"POST\">\n<input type=\"hid
 
 
 ?>
-	<div class="str">
-		<!-- mail btc usd rub submit -->
-		<form action="" method="POST">
-		<input type="hidden" name="mail" value="mail">
-		<div class="user" style="color: #FF8000;">h22341sadf@mail.ru
-		<font style="color: #5197FF; float: right;">user453</font></div>
-		<div class="balance"><p>btc: <input type="text" placeholder="0.00000000"></p>
-		<p>usd: <input type="text" placeholder="0.00"></p>
-		<p>rub: <input type="text" placeholder="0.00"></p></div>
-		
-		<input name="submit" type="submit" value="Изменить">
-		</form>
-		<form action="" method="POST">
-			<input type="hidden" name="mail" value="mail">
-			<input type="submit" name="done" value="Открыть чат">
-		</form>
-	</div>
+	
 
 	<style>
 		body {
