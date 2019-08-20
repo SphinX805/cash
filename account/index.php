@@ -1,4 +1,4 @@
-<?php /*
+<?php
 session_set_cookie_params(21600);
 session_start();
 $status = $_SESSION["auth"];
@@ -7,8 +7,12 @@ if($status != true){
 header('Location: ../index.php');
 }else{
 require "../bd.php";
-$result_set = $bd -> query("SELECT `rub` FROM `users` WHERE `id` = '".$id."'");
-$balance = vivodB($result_set);
+$result_set1 = $bd -> query("SELECT `rub` FROM `users` WHERE `id` = '".$id."'");
+$result_set2 = $bd -> query("SELECT `usd` FROM `users` WHERE `id` = '".$id."'");
+$result_set3 = $bd -> query("SELECT `btc` FROM `users` WHERE `id` = '".$id."'");
+$rub = vivodB($result_set1);
+$usd = vivodB1($result_set2);
+$btc = vivodB2($result_set3);
 $bd -> close();
 
 }
@@ -19,7 +23,23 @@ function vivodB($result_set){
 		return $row["rub"];
 		
 	}
-}  */
+}
+
+function vivodB1($result_set){
+
+	while(($row = $result_set->fetch_assoc()) != false){
+		return $row["usd"];
+		
+	}
+}
+
+function vivodB2($result_set){
+
+	while(($row = $result_set->fetch_assoc()) != false){
+		return $row["btc"];
+		
+	}
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +57,7 @@ function vivodB($result_set){
 
 		<div class="h-link"><a href="#">DogeCash.ru</a></div>
 		<div class="h-link"><a href="#">Пополнение<i class="fas fa-plus"></i></a></div>
-				<div class="balance"><a><?php /* echo $balance.".00 RUB"; */ ?></a></div> <!-- SANYA BLYAT KOSHELEK -->
+				<div class="balance"><a><?php  echo $rub.".00 RUB";  ?></a></div> <!-- SANYA BLYAT KOSHELEK -->
 		<div class="h-link"><a href="#">Сервисы<i class="fas fa-list"></i></a></div>
 		<form action="exit.php" method="POST"><div class="h-link exit"><button type="submit" name="done" value="Выход">Выход</button></form></div>
 	</div>
@@ -56,16 +76,16 @@ function vivodB($result_set){
 	<div class="b-status">
 		<div class="balance-block">
 			<a href="#"><i class="fab fa-btc"></i>Bitcoin <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a> 
-			<!-- ТУТ БАЛАНС --><p><strong>0.000000000</strong> BTC</p>
+			<!-- ТУТ БАЛАНС --><p><strong><?php  echo $btc;  ?></strong> BTC</p>
 			<div class="down"><a class="down-btc" href="#">aaaa</a></div>
 		</div>
 		<div class="balance-block">
 			<a href="#"><i style="color: green;" class="fas fa-dollar-sign"></i>Доллары <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down" onclick=""></i></a>
-			<!-- ТУТ БАЛАНС --><p><strong>0.00</strong> USD</p>
+			<!-- ТУТ БАЛАНС --><p><strong><?php  echo $usd;  ?></strong> USD</p>
 			<div class="down"><a href="#"><i class="fas fa-cart-arrow-down"></i> Пополнить</a> <a href="#"><i class="fas fa-wallet"></i> Вывести</a></div>
 		</div>
 		<div class="balance-block"><a href="#"><i style="color: #2FA6E2;" class="fas fa-ruble-sign"></i>Рубли <i style="font-size: 14px; color: blue;" class="fas fa-arrow-down"></i></a>
-			<!-- ТУТ БАЛАНС --><p><strong>0.00</strong> RUB</p>
+			<!-- ТУТ БАЛАНС --><p><strong><?php  echo $rub;  ?></strong> RUB</p>
 			<div class="down"><a href="#"><i class="fas fa-cart-arrow-down"></i> Пополнить</a> <a href="#"><i class="fas fa-wallet"></i> Вывести</a></div>
 		</div>
 		<div class="last2links">
