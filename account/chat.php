@@ -2,8 +2,8 @@
 session_set_cookie_params(21600);
 session_start();
 require "../bd.php";
-//$id = $_SESSION["id"];
-$id = 39;
+$id = $_SESSION["id"];
+//$id = 39;
 $result_set1 = $bd -> query("SELECT `mail` FROM `users` WHERE `id` = '".$id."'");
 $mail = vivod1($result_set1);
 $time = time();
