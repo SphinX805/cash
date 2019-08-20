@@ -2,6 +2,7 @@ window.onload = function() {
 var btn = document.body.querySelector(".chat-btn"),
 chat = document.body.querySelector(".chat"),
 close = document.body.querySelector(".close");
+
 chat.style.display = "none";
 
 function openF() {
@@ -12,12 +13,6 @@ function openF() {
 function closeF() {
 	chat.style.display = "none";
 	btn.style.display = "inline-block";
-}
-
-function down(i) {
-	let downDivs = document.body.querySelectorAll(".down");
-	if (downDivs[i].style.display == "inline-block") downDivs[i].style.display = "none";
-	else if (downDivs[i].style.display == "none") downDivs[i].style.display = "inline-block";
 }
 
 var chatcontent = document.body.querySelector(".chat").innerHtml;
