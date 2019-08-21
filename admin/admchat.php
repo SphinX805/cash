@@ -1,18 +1,12 @@
 <?php
-session_set_cookie_params(21600);
-session_start();
-require "../bd.php";
-$id = $_SESSION["id"];
-
-//$id = 39;
-$result_set1 = $bd -> query("SELECT `mail` FROM `users` WHERE `id` = '".$id."'");
-$mail = vivod1($result_set1);
+if(isset($_POST["done"]){
+$mail = $_POST["mail"];
 $time = time();
 
 if(isset($_POST["send"]))
 {
-$USmsg = $_POST["msg"];
-$bd -> query("INSERT INTO `chat` (`id`, `mail`, `USmsg`, `ADmsg`, `time`) VALUES (NULL, '".$mail."', '".$USmsg."', NULL, '".$time."');");
+$ADmsg = $_POST["msg"];
+$bd -> query("INSERT INTO `chat` (`id`, `mail`, `USmsg`, `ADmsg`, `time`) VALUES (NULL, '".$mail."', '', '".$ADmsg."', '".$time."');");
 
 }	
 
@@ -28,6 +22,9 @@ $messagesID = IDmessag($ALLids);
 $messagesTIME = TIMEmessag($ALLtimes);
 $messagesNUMBad = colvo($colAD);
 $messagesNUMBus = colvo1($colUS);
+}
+
+
 
 
 function colvo1($result_set){
@@ -102,7 +99,24 @@ function vivod1($result_set){
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
+
 <p style="
 		position: absolute;
 		right: 20%;
