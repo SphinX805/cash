@@ -110,7 +110,7 @@ echo "<div class=\"str\">\n<form action=\"balADM.php\" method=\"POST\">\n<input 
 		body {
 			margin: 0;
 			background-color: #00381f;
-			background-image: url("https://www.transparenttextures.com/patterns/padded-light.png");\
+			background-image: url("https://www.transparenttextures.com/patterns/padded-light.png");
 		}
 		.str {
 			width: 100%;

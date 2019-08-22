@@ -30,8 +30,8 @@
 	<style>
 		body {
 			margin: 0;
-			background-color: #000000;
-			background-image: url("https://www.transparenttextures.com/patterns/scribble-light.png");
+			background-color: #00381f;
+			background-image: url("https://www.transparenttextures.com/patterns/padded-light.png");
 		}
 
 		.chat-window {

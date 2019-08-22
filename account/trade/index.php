@@ -37,7 +37,7 @@
 			<span>Сумма</span>
 			<input type="text" name="tradeValue">
 			<span>Валюта</span>
-			<select class="form-control input-lg" id="payFormModal-type" name="what"><option value="1">Обменять BTC на RUB</option><option value="2">Обменять BTC на USD</option><option value="3">Обменять RUB на BTC</option><option value="4">Обменять RUB на USD</option><option value="5">Обменять USD на RUB</option></select>
+			<select class="form-control input-lg" id="payFormModal-type" name="what"><option value="1">Обменять BTC на RUB</option><option value="2">Обменять BTC на USD</option><option value="3">Обменять RUB на BTC</option><option value="4">Обменять RUB на USD</option><option value="5">Обменять USD на RUB</option></select><br>
 			<button>Далее</button>
 		</form>
 	</div>
@@ -49,9 +49,37 @@
 			border: 1px solid #c0c0c0;
 			border-radius: 8px;
 			box-shadow: 0 0 10px #000;
+			text-align: center;
 			color: #000;
 			width: calc(70% - 40px);
 			margin-left: 15%;
+		}
+
+		.trade span {
+			margin: 5px 0;
+			display: block;
+			width: 100%;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.trade input, select {
+			width: 70%;
+			border: 1px solid #c0c0c0;
+			padding: 5px 0;
+			font-size: 20px;
+			border-radius: 14px;
+		}
+
+		.trade button {
+			margin-top: 25px;
+			padding: 5px 15px;
+			border-radius: 20px;
+			border: none;
+			background-color: #FFDB00;
+			color: #0c0c0c;
+			font-size: 20px;
+			font-weight: bold;
 		}
 
 		.trade p {
