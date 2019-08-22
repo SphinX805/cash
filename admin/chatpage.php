@@ -88,7 +88,7 @@
 		.users ul {
 			padding-left: 0;
 			display: inline-block;
-			margin: 10px 0;
+			margin: 0;
 			width: 100%;
 			list-style-type: none;
 		}
@@ -102,8 +102,7 @@
 		.users li a {
 			margin: 0;
 			padding-bottom: 5px;
-			width: 60%;
-			margin-left: 20%;
+			width: 100%;
 			text-align: center;
 			margin-top: 5px;
 			border-bottom: 1px solid #c0c0c0;
