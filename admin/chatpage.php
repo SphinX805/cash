@@ -15,6 +15,18 @@
 	</form>
 	</div>
 
+	<div class="users">
+		<form action="users" method="POST">
+			<ul>
+				<li><a href="#">user1</a></li>
+				<li class="active"><a href="#">user2</a></li>
+				<li><a href="#">user3</a></li>
+				<li><a href="#">user4</a></li>
+				<li><a href="#">user5</a></li>
+			</ul>
+		</form>
+	</div>
+
 	<style>
 		body {
 			margin: 0;
@@ -24,7 +36,7 @@
 
 		.chat-window {
 			background-color: #c0c0c0;
-			margin-left: calc(50% - 150px);
+			margin-left: calc(25% - 150px);
 			margin-top: 50px;
 			position: relative;
 			border: 1px solid #161616;
@@ -51,6 +63,54 @@
 
 		.chat-window form input {
 			width: 80%;
+		}
+
+		.users {
+			width: 200px;
+			position: absolute;
+			right: 80px;
+			top: 60px;
+			border-radius: 10px;
+			border: 1px solid #fff;
+		}
+
+		.active {
+			background-color: #0c0c0c;
+			font-weight: normal;
+			margin: 10px 0;
+		}
+
+		.users form {
+			display: inline-block;
+			width: 100%;
+		}
+
+		.users ul {
+			padding-left: 0;
+			display: inline-block;
+			margin: 10px 0;
+			width: 100%;
+			list-style-type: none;
+		}
+
+		.users ul li {
+			display: inline-block;
+			margin: 0;
+			width: 100%;
+		}
+
+		.users li a {
+			margin: 0;
+			padding-bottom: 5px;
+			width: 60%;
+			margin-left: 20%;
+			text-align: center;
+			margin-top: 5px;
+			border-bottom: 1px solid #c0c0c0;
+			display: inline-block;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
 		}
 
 		form button {
