@@ -35,11 +35,12 @@
 		}
 
 		.chat-window {
-			background-color: #c0c0c0;
+			color: #fff;
 			margin-left: calc(25% - 150px);
 			margin-top: 50px;
 			position: relative;
-			border: 1px solid #161616;
+			border: 1px solid #fff;
+			box-shadow: 0 0 20px #000;
 			border-radius: 8px;
 			display: inline-block;
 			width: 300px;
