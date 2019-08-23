@@ -68,7 +68,7 @@ function vivodB2($result_set){
 		<div class="content-menu"><a href="#">Баланс</a></div>
 		<div class="content-menu"><a href="#">Ставки</a></div>
 		<div class="content-menu"><a href="#">Вывести</a></div>
-		<div class="content-menu"><a href="#">Обменять</a></div>
+		<div class="content-menu"><a href="./trade/index.php">Обменять</a></div>
 		<div class="content-menu"><a href="#">История</a></div>
 		<div class="content-menu"><a href="#">Настройки</a></div>
 	</div>
@@ -97,11 +97,11 @@ function vivodB2($result_set){
 
 	</div>
 	<!-- content end -->
-	<div class="partner">Our partner:<br><img src="sber.png" width="200px" height="60px" margin="10px 0"></div>
+	<div class="partner">Our partner:<br><img src="/account/sber.png" width="200px" height="60px" margin="10px 0"></div>
 	<div class="chat">
 	<a href="#" class="close">Close Chat</a>
 	<!-- ЧАТ -->
-	<form action="chat.php">
+	<form action="chat.php" method="POST">
 		<input type="text" placeholder="...">
 		<button><i class="fas fa-paper-plane"></i></button>
 	</form>

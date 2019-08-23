@@ -323,14 +323,18 @@ form i{
 	background-color: #5BC0DE;
 }
 
+.partner img {
+	margin-top: 8px;
+}
+
 
 .footer-c {
 	padding: 5px;
 	border-radius: 8px;
 	border: 1px solid #c0c0c0;
-	margin-left: 15%;
+	margin-left: 22.5%;
 	margin-top: 50px;
-	width: 70%;
+	width: 49%;
 	height: auto;
 }
 
