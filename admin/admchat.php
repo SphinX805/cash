@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST["done"]){
+$u = $_POST["numBUT"];
+if(isset($_POST["done".$i""]){
 $mail = $_POST["mail"];
 $time = time();
 
@@ -103,18 +104,6 @@ function vivod1($result_set){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
 <p style="
@@ -122,4 +111,4 @@ function vivod1($result_set){
 		right: 20%;
 		top: 40px;
 		z-index: 11;
-		" id="php"><?php for($i = 0; $i < $messagesNUMBus; $i++){echo "<br>".'<font color="green">'.$messagesUSER[$i].'</font>'."</br>".'<font color="red">'.$messagesADMIN[$i].'</font>'."</br>";} ?></p>
+		" id="php"> <?php for($i = 0; $i < $messagesNUMBus; $i++){echo "<br>".'<font color="green">'.$messagesUSER[$i].'</font>'."</br>".'<font color="red">'.$messagesADMIN[$i].'</font>'."</br>";} ?> </p>
